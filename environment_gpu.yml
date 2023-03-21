@@ -1,0 +1,32 @@
+# File: environment.yml
+# Created Date: Saturday February 13th 2021
+# Author: Steven Atkinson (steven@atkinson.mn)
+
+name: nam
+channels:
+  - pytorch
+  - nvidia
+dependencies:
+  - black
+  - flake8
+  - h5py
+  - jupyter
+  - matplotlib
+  - numpy
+  - pip
+  - pytest
+  - pytorch
+  - pytorch-cuda=11.7
+  - scipy
+  - semver
+  - tensorboard
+  - tqdm
+  - wheel
+  - pip:
+      - onnx
+      - onnxruntime # TODO GPU...
+      - pre-commit
+      - pytorch_lightning
+      - sounddevice
+      - wavio
+      - -e .

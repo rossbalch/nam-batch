@@ -49,7 +49,7 @@ from typing import Optional
 
 print("Calculating the delay between input and output audio.")
 
-_V1_BLIP_LOCATIONS = 12_000,
+_V1_BLIP_LOCATIONS = 12_000, 36_000
 
 def _calibrate_delay_v1(input_path, output_path) -> int:
     lookahead = 1_000

@@ -33,8 +33,9 @@ git clone https://github.com/rossbalch/nam-batch
 
 # Usage
 Copy your input and output files to the materials folder in the nam-batch directory. It is important that you copy the files and not move them, the files will be deleted after the process finishes. There are also some naming considerations. Your files must be called name_In.wav and name_Out.wav the batch script will not recognise them other wise. </br>
+</br>
 For Instance: </br>
-Peavy_5150_In.wav </br?
+Peavy_5150_In.wav </br>
 Peavy_5150_Out.wav </br>
 If you use the original v_1_1_1 file just copy and rename it for each model you wish to train. </br>
 Once all the files you wish to train are in the materials folder simply run the script, it will ascertain the delay, queue up the training, generate the models and all the resulting files will be available in the exports folder. </br>

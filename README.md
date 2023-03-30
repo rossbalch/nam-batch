@@ -2,11 +2,11 @@ This is a version of https://github.com/sdatkinson/neural-amp-modeler that has a
 
 Using the batch script is fairly simple, but there are some setup rules you will need to follow.
 
-Installing is easy, first follow the install instruction for the original neural-amp-modeler if you haven't already, then install my custom repo that contains the batch process
+Installing is easy, first follow the install instruction for the original neural-amp-modeler if you haven't already, then install my custom repo that contains the batch process.
 
 briefly:
-Install Conda
-using conda install git if you don't have it already
+Install Conda https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
+using conda, install git if you don't have it already
 
 ```bash
 conda install git

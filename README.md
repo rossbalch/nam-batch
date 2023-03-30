@@ -37,8 +37,12 @@ Copy your input and output files to the materials folder in the nam-batch direct
 For Instance: </br>
 Peavy_5150_In.wav </br>
 Peavy_5150_Out.wav </br>
+</br>
 If you use the original v_1_1_1 file just copy and rename it for each model you wish to train. </br>
 Once all the files you wish to train are in the materials folder simply run the script, it will ascertain the delay, queue up the training, generate the models and all the resulting files will be available in the exports folder. </br>
+</br>
+Please note at the moment the quoted ESRs are actually MRSE, so to get the ESR you need to perform the quoted number^2
+</br>
 
 ```bash
 cd nam-batch
@@ -50,4 +54,7 @@ conda activate nam
 python batch.py
 ```
 
+</br>
 
+# Troubleshooting
+If you get into some issues, for instance the ESR is bad, it could be the auto determined delay value is bad, in this case it might be worth running the batching in 3 steps instead. prep_batch.py will create all of the folders and config files neccessary to run in a batch, at this point you can manually change the delay value in each JSON. Then you can run train_batch.py and finally export_batch.py . If the batch process runs into error clean.py will put the batch directory back to the creation state, you will need to re-copy your input and output files.

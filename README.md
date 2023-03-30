@@ -57,4 +57,4 @@ python batch.py
 </br>
 
 # Troubleshooting
-If you get into some issues, for instance the ESR is bad, it could be the auto determined delay value is bad, in this case it might be worth running the batching in 3 steps instead. prep_batch.py will create all of the folders and config files neccessary to run in a batch, at this point you can manually change the delay value in each JSON. Then you can run train_batch.py and finally export_batch.py . If the batch process runs into error clean.py will put the batch directory back to the creation state, you will need to re-copy your input and output files.
+If you get into some issues, for instance the ESR is bad, it could be the auto determined delay value is bad, in this case it might be worth running the batching in 3 steps instead. prep_batch.py will create all of the folders and config files neccessary to run in a batch, at this point you can manually change the delay value in delay.csv Then you can run train_batch.py and finally export_batch.py . If the batch process runs into error clean.py will put the batch directory back to the creation state, you will need to re-copy your input and output files.
